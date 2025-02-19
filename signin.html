@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <link rel="stylesheet" href="styles/signinstyles.css">
+          <title></title>
+      </head>
+
+  <body>
+    
+         <nav class="heading">
+
+            <span class="image">
+                <img src="/images/image.png" alt="logo">
+            </span>
+    
+            <span class="name"><a href="index.html">Todo<span class="reg">ist.</span></a></span>
+    
+            <ul>
+                <li><a href="signup.html">Signin</a></li>
+            </ul>
+    
+         </nav>
+         
+         <div class="container">
+
+            <div class="Form_container">
+
+               <form onsubmit="event.preventDefault()">
+                  <div class="text">
+                     LOGIN HERE
+                  </div>
+               <input type="email" placeholder="Email" id="email">
+               <input type="password" placeholder="Password" id="password">
+              <button type="button" onclick="onLogin()">Login</button>
+               
+              <div class="word">
+               do not have account? <span><a href="signup.html">Signup</a></span>
+          </div>
+               </form>
+            </div>
+         </div>
+
+         <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
+         <script src="./scripts/firebase.js"></script>
+         <script src="./scripts/auth.js"></script>
+
+ </body>
+</html>

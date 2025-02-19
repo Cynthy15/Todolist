@@ -1,0 +1,66 @@
+<!DOCTYPE >
+<html lang="en">
+    <head>
+         
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles/newstyles.css">
+        <link rel="html" href="workingpage.html">
+        <title></title>
+
+    </head>
+        <body>
+
+            <nav class="heading">
+
+                <span class="image">
+                    <img src="/images/image.png" alt="logo">
+                </span>
+        
+                <span class="name"><a href="index.html">Todo<span class="reg">ist.</span></a></span>
+        
+                <ul>
+                    <li><a href="signin.html">Lognin</a></li>
+                </ul>
+        
+             </nav>
+        
+<div class="sidebar">
+
+    <div class="highlight"> 
+        <div class="text">
+            Add new work
+         </div>
+  
+</div>
+
+<div class="container">
+    <form onsubmit="event.preventDefault()">
+
+        <label for="no">No:</label>
+        <input type="number" placeholder="nbr" id="number">
+
+        <label for="name">name:</label>
+        <input type="text" placeholder="name" id="name">
+
+        <label for="place">time:</label>
+        <input type="time" placeholder="time" id="time">
+
+        <label for="place">Place:</label>
+        <input type="text" placeholder="place" id="place">
+
+        <button type="button" id="insert"  onclick="AddData()">Add  </button>
+       
+    </form>
+</div>
+
+ <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
+ <script src="./scripts/firebase.js"></script>
+ <script src="./scripts/auth.js"></script>
+ <script src="./scripts/database.js"></script>
+
+ </body>
+</html>
